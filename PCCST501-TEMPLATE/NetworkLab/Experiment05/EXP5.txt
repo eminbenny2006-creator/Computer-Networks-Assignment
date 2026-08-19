@@ -1,0 +1,115 @@
+
+
+1.Socket Programming
+
+server
+*****
+
+student@student-OptiPlex-3020:~/Desktop/e$ gcc server.c -o server 
+student@student-OptiPlex-3020:~/Desktop/e$ ./server 
+Socket Created Successfully...
+Bind Successful...
+Waiting for Client...
+Client Connected...
+Client Says : Hi Server
+
+Reply Sent...
+Connection Closed...
+
+client
+******
+student@student-OptiPlex-3020:~/Desktop/e$  gcc server.c -o server 
+student@student-OptiPlex-3020:~/Desktop/e$ ./server 
+Socket Created Successfully...
+Bind Successful...
+Waiting for Client...
+Client Connected...
+Client Says : Hellooo
+Reversed String : ooolleH
+Reversed String Sent...
+Connection Closed...
+ 
+
+
+------------------------------------------------------------------------
+2.Reverse a String
+
+server
+*****
+
+student@student-OptiPlex-3020:~/Desktop/e$ gcc client.c -o client 
+student@student-OptiPlex-3020:~/Desktop/e$ ./client
+Socket Created Successfully...
+Connected to Server...
+Enter Message : Hi Server
+Message Sent...
+
+Reply from Server : Hello Client
+Connection Closed...
+
+client
+******
+
+student@student-OptiPlex-3020:~/Desktop/e$ gcc client.c -o client 
+student@student-OptiPlex-3020:~/Desktop/e$ ./client
+Socket Created Successfully...
+Connected to Server...
+Enter String : Hellooo
+String Sent...
+
+Reversed String from Server : ooolleH
+Connection Closed...
+ 
+
+-------------------------------------------------------------------------
+
+
+3.Array Sorting
+ 
+
+server
+******
+
+student@student-OptiPlex-3020:~/Desktop/e$ gcc server.c -o server
+student@student-OptiPlex-3020:~/Desktop/e$ ./server
+Socket Created Successfully...
+Bind Successful...
+Waiting for Client...
+Client Connected...
+
+Array Received :
+
+20 50 30 40 10 
+
+Array Sorted Successfully...
+Sorted Array Sent Successfully...
+Connection Closed...
+
+client
+******
+
+student@student-OptiPlex-3020:~/Desktop/e$ gcc client.c -o client
+student@student-OptiPlex-3020:~/Desktop/e$ ./client
+Enter Array Size : 5
+
+Enter Array Elements :
+
+20 50 30 40 10
+
+Connecting to Server...
+
+Array Sent Successfully...
+
+Waiting for Response...
+
+Server Response :
+
+Sorted Array :
+
+10 20 30 40 50 
+
+Connection Closed...
+ 
+-------------------------------------------------------
+
+
